@@ -1,0 +1,60 @@
+﻿@model IEnumerable<TccMvc.Models.Categoria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<section class="container d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh">
+    @if(Model.Count() < 1)
+    {
+        <h1 class="btn btn-danger"><b>Não existem categorias cadastradas</b></h1>
+        <div class="d-flex justify-content-between">
+            <a asp-action="Index" asp-controller="Admin" class="btn btn-primary mr-3">Voltar</a>
+            <a asp-action="Create" class="btn btn-primary"> Criar nova</a>
+        </div>
+        
+
+    }
+    else
+    {
+        <h1 class="mb-3">Categorias</h1>
+        <a asp-action="Create" class="btn btn-primary mb-3">Criar nova</a>
+        <div class=" table-responsive">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Nome)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Descricao)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nome)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descricao)
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary mr-1">Editar</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary mr-1">Detalhes</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-primary">Apagar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+   
+</section>
+
+

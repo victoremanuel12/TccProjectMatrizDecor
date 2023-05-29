@@ -1,0 +1,171 @@
+﻿@using TccMvc.Controllers
+@{
+    var categorias = ViewBag.Categorias as IEnumerable<Categoria>;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TccMvc</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/leadmark.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TccMvc.styles.css" asp-append-version="true" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                <img src="~/Images/LogoMatrizDecor.png" style="width:50px" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    @if (HttpContextAccessor.HttpContext.Session.GetString("EmailUser") == "matrizdecoradmin@hotmail.com")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link  ml-4 nav-link btn btn-primary btn-sm rounded mb-1" asp-area="Admin" asp-controller="Admin" asp-action="Index">Área Administrativa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  ml-4 nav-link btn btn-primary btn-sm rounded" asp-controller="ContaUsuario" asp-action="Logout">Sair</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Produto" asp-action="List">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="CarrinhoDeCompras" asp-action="Carrinho">
+                                <img src="~/images/carrinho-de-compras-de-design-xadrez.png" style="width:20px; height:20px;" />
+                            </a>
+                        </li>
+                        @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("UserId") == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link ml-4 nav-link btn btn-primary btn-sm rounded" asp-controller="ContaUsuario" asp-action="Login">Login</a>
+                            </li>
+                        }
+                        @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("UserId") != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link  ml-4 nav-link btn btn-primary btn-sm rounded" asp-controller="ContaUsuario" asp-action="Logout">Sair</a>
+                            </li>
+                        }
+                    }
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div id="mensagem-sucesso" class="alert alert-success alert-dismissible fade show position-fixed " role="alert" style="top: 15%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+            <strong class="text-center">@TempData["MensagemSucesso"]</strong>
+        </div>
+        <script>
+            setTimeout(function () {
+                document.getElementById("mensagem-sucesso").style.display = "none";
+            }, 3000);
+        </script>
+    }
+    @if (TempData["EmailSendSucess"] != null)
+    {
+        <div id="mensagem-sucesso" class="alert alert-danger alert-dismissible fade show position-fixed " role="alert" style="top: 15%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+            <strong class="text-center">@TempData["EmailSendSucess"]</strong>
+        </div>
+        <script>
+            setTimeout(function () {
+            document.getElementById("mensagem-sucesso").style.display = "none";
+            }, 3000);
+        </script>
+    }
+    @if (TempData["ErrorAoEnviarEmail"] != null)
+    {
+        <div id="mensagem-sucesso" class="alert alert-danger alert-dismissible fade show position-fixed " role="alert" style="top: 15%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+            <strong class="text-center">@TempData["ErrorAoEnviarEmail"]</strong>
+        </div>
+        <script>
+            setTimeout(function () {
+                document.getElementById("mensagem-sucesso").style.display = "none";
+            }, 3000);
+        </script>
+    }
+    <div class="container-fluid">
+        <main role="main" class="mb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">Telefone:</h6>
+                    <p class="mb-4">+55 (71)98855-2607</p>
+
+                    <h6 class="mb-0">Endereço:</h6>
+                    <p class="mb-4">Centro de Lauro de Freitas</p>
+
+                    <h6 class="mb-0">Email</h6>
+                    <p class="mb-0">matrizDecor@gmail.com</p>
+                    <p></p>
+                </div>
+                
+                    <div class="col-md-7">
+                        <form>
+                            <h4 class="mb-4">Nos envie sua opinião:</h4>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Nome">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Assunto">
+                                </div>
+                                <div class="form-group col-12">
+                                    <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Menssagem"></textarea>
+
+                                </div>
+                                <div class="form-group col-12 mb-0">
+                                    <button type="submit" class="btn btn-primary rounded w-md mt-3">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                   @* @{
+                        @await Html.PartialAsync("_EmailPartial")
+                    }*@
+                </div>
+            </div>
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small text-center">&copy; <script>document.write(new Date().getFullYear())</script>, Created By <a href="https://www.devcrud.com" target="_blank">Senai Cimatec</a>  Todos os direitos reservados </p>
+            </footer>
+        </div>
+    </section>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/leadmark.js"></script>
+    <script src="~/js/vendors/bootstrap/bootstrap.js"></script>
+    <script src="~/js/vendors/isotope/isotope.pkgd.js"></script>
+    <script src="~/js/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="~/js/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/leadmark.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

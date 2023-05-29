@@ -1,0 +1,39 @@
+﻿@model TccMvc.Models.Categoria
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<section class="container d-flex justify-content-center align-items-center flex-column text-center" style="min-height: 100vh">
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div id="mensagem-sucesso" class="alert alert-success text-center mt-3">@TempData["MensagemSucesso"]</div>
+        <script>
+            setTimeout(function () {
+                document.getElementById("mensagem-sucesso").style.display = "none";
+            }, 4000);
+        </script>
+    }
+    <h1>Deletar categoria</h1>
+    <span>Apenas categorias não vinculadas a algum produto poderão ser excluidas</span>
+    <div>
+        <hr />
+        <div class="mb-3"><b>@Html.DisplayNameFor(model => model.Nome): </b>@Html.DisplayFor(model => model.Nome)</div>
+        <div class="mb-3"><b>@Html.DisplayNameFor(model => model.Descricao) :</b>@Html.DisplayFor(model => model.Descricao)</div>
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <span>@error.ErrorMessage</span>
+                }
+            </div>
+        }
+        <form asp-action="DeleteConfirmed">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-primary">Voltar</a>
+        </form>
+    </div>
+
+</section>
+

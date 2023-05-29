@@ -1,0 +1,102 @@
+﻿@model TccMvc.ViewModel.ProdutosCarrinhoViewModel
+<style>
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        width: 50%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .modal h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .modal p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .modal button {
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+    }
+
+    .modal a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .btn-details {
+        background-color: gray;
+        color: white;
+    }
+</style>
+<div class="container d-flex flex-column justify-content-center align-items-center" style=" overflow-y: auto; height:100vh">
+    @if (Model.CarrinhoDeComprasItems.Count() == 0)
+    {
+        <div class="modal">
+            <div class="modal-content">
+                <h1>Seu carrinho está vazio</h1>
+                <p>Selecione seus produtos</p>
+                <button><a asp-controller="Produto" asp-action="List" class="link">Produtos</a></button>
+            </div>
+        </div>
+    }
+    else
+    {
+       <hr />
+        <div class="d-flex flex-column align-items-center" style="margin-top:50px;">
+            <div class="d-flex flex-wrap justify-content-center align-items-start">
+                @foreach (var produto in Model.CarrinhoDeComprasItems)
+                {
+                    <div class="card mb-3" style="width: 600px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a asp-controller="Produto" asp-action="Detalhes" asp-route-produtoId="@produto.Produto.Id">
+                                    <img src="data:image;base64,@produto.Produto.ImagemUrl" class="rounded float-start" style="max-height:200px; width:150px">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">@produto.Produto.Nome</h5>
+                                    <p class="card-text">@produto.Produto.Descricao</p>
+                                    <p class="card-text"><b>@((produto.Produto.Preco * produto.Quantidade).ToString("c"))</b></p>
+                                    <p class="card-text">Quantidade: <b>@produto.Quantidade</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="link btn btn-danger" asp-controller="CarrinhoDeCompras" asp-action="ExcluirItemDoCarrinhoCompra" asp-route-produtoId="@produto.Produto.Id">Excluir</a>
+                    </div>
+                }
+            </div>
+            <p class="font-weight-bold btn btn-primary">Valor Total: <b>@Model.ValorTotalCarrinhoCompra.ToString("c")</b></p>
+            <div class="btn-group" role="group">
+                <a class="btn mx-2 btn-details link" asp-controller="Produto" asp-action="List">Continuar Comprando</a>
+                <a class="btn btn-success link" asp-controller="CarrinhoDeCompras" asp-action="FinalizarCompra">Finalizar Compra</a>
+            </div>
+        </div>
+    }
+</div>

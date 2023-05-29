@@ -1,0 +1,421 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TccMvc.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TccMvc.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\Admin-bro.png",
+      "PackagePath": "staticwebassets\\Images\\Admin-bro.png"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\AdminImage.png",
+      "PackagePath": "staticwebassets\\Images\\AdminImage.png"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\Aniversario.jpg",
+      "PackagePath": "staticwebassets\\Images\\Aniversario.jpg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\CasamentoImagem.jpg",
+      "PackagePath": "staticwebassets\\Images\\CasamentoImagem.jpg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\Formatura01.jpg",
+      "PackagePath": "staticwebassets\\Images\\Formatura01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\Header.jpg",
+      "PackagePath": "staticwebassets\\Images\\Header.jpg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\LogoComFundo.png",
+      "PackagePath": "staticwebassets\\Images\\LogoComFundo.png"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\LogoMatrizDecor.png",
+      "PackagePath": "staticwebassets\\Images\\LogoMatrizDecor.png"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\carrinho-de-compras-de-design-xadrez.png",
+      "PackagePath": "staticwebassets\\Images\\carrinho-de-compras-de-design-xadrez.png"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\celle.jpg",
+      "PackagePath": "staticwebassets\\Images\\celle.jpg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\fast-food-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\fast-food-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\fast-food-2.jpeg",
+      "PackagePath": "staticwebassets\\Images\\fast-food-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\fast-food-3.jpeg",
+      "PackagePath": "staticwebassets\\Images\\fast-food-3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\gabi.jpg",
+      "PackagePath": "staticwebassets\\Images\\gabi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\lua.png",
+      "PackagePath": "staticwebassets\\Images\\lua.png"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\css\\leadmark.css",
+      "PackagePath": "staticwebassets\\css\\leadmark.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\leadmark.js",
+      "PackagePath": "staticwebassets\\js\\leadmark.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.affix.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.affix.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\bootstrap\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\vendors\\bootstrap\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\isotope\\isotope.pkgd.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\isotope\\isotope.pkgd.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\isotope\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\isotope\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\jquery\\jquery-3.4.1.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\jquery\\jquery-3.4.1.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\jquery\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\jquery\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\jquery\\jquery-3.4.1.min.map",
+      "PackagePath": "staticwebassets\\js\\vendors\\jquery\\jquery-3.4.1.min.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\jquery\\jquery-3.4.1.slim.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\jquery\\jquery-3.4.1.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\jquery\\jquery-3.4.1.slim.min.js",
+      "PackagePath": "staticwebassets\\js\\vendors\\jquery\\jquery-3.4.1.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\jquery\\jquery-3.4.1.slim.min.map",
+      "PackagePath": "staticwebassets\\js\\vendors\\jquery\\jquery-3.4.1.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\themify-icons\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\js\\vendors\\themify-icons\\css\\themify-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\themify-icons\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\js\\vendors\\themify-icons\\fonts\\themify.eot"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\themify-icons\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\js\\vendors\\themify-icons\\fonts\\themify.svg"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\themify-icons\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\js\\vendors\\themify-icons\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\js\\vendors\\themify-icons\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\js\\vendors\\themify-icons\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TccMvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TccMvc.props",
+      "PackagePath": "build\\TccMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TccMvc.props",
+      "PackagePath": "buildMultiTargeting\\TccMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TccMvc.props",
+      "PackagePath": "buildTransitive\\TccMvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

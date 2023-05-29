@@ -1,0 +1,19 @@
+﻿<section class="container d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh">
+    @if (TempData["ErrorAoExcluir"] != null)
+    {
+        <div id="mensagem-sucesso" class="alert alert-danger alert-dismissible fade show position-fixed" role="alert" style="top: 20%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+            <p class="text-center"><b>@TempData["ErrorAoExcluir"]</b></p>
+        </div>
+        <script>
+            setTimeout(function () {
+                document.getElementById("mensagem-sucesso").style.display = "none";
+            }, 5000);
+        </script>
+    }
+    <div class="jumbotron bg-danger text-white d-flex justify-content-center align-items-center flex-column mt-lg-5 p-3">
+        <h4>Não é possivel deletar produto ou categoria</h4>
+        <p>Por conta do produto ou categoria está vinculado a um pedido já realizado não é possivel deleta-lo</p>
+        <p><b>Caso queira que o produto não esteja disponivel para os clientes,  clique em editar no respectivo produto e descarmarque a caixa de "Está disponível?" </b></p>
+    </div>
+   
+</section>

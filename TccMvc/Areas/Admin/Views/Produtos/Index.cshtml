@@ -1,0 +1,61 @@
+﻿@model IEnumerable<TccMvc.Models.Produto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<section class="container d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh">
+    @if (Model.Count() < 1)
+    {
+        <h1 class="btn btn-danger"><b>Não existem produtos cadastradas</b></h1>
+        <div class="d-flex justify-content-between">
+            <a asp-action="Index" asp-controller="Admin" class="btn btn-primary mr-3">Voltar</a>
+            <a asp-action="Create" class="btn btn-primary"> Criar novo</a>
+        </div>
+    }
+    else
+    {
+        <h1>Produtos</h1>
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Novo</a>
+        </p>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Preço
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Nome
+                            </td>
+                            <td>
+                                @item.Preco.ToString("c")
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary mr-1">Editar</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary mr-1">Detalhes</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-primary">Deletar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    }
+
+
+</section>
+
+

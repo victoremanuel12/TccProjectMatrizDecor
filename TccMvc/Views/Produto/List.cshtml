@@ -1,0 +1,44 @@
+﻿@model ProdutoListViewModel
+
+@{
+    ViewData["Title"] = "List";
+}
+<section class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 120vh; margin-top:100px; margin-bottom:50px">
+    @if (Model.Produtos.Count() < 1)
+    {
+        <h2 class="btn btn-primary">Não existem produtos disponíveis no momento</h2>
+    }
+    else
+    {
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <form id="filtroCategoriaForm" asp-controller="Produto" asp-action="List" method="get" class="form-inline ml-2">
+                <div class="d-flex align-items-center">
+                    <div class="form-group mb-0">
+                        <span class="mr-2">Filtrar por categoria</span>
+                        <select class="form-control" id="categoriaSelect" name="categoriaId" data-nome-categoria="@Model.CategoriaAtual">
+                            <option></option>
+                            <option value="0">Todos</option>
+                            @foreach (var categoria in Model.Categorias)
+                            {
+                                <option value="@categoria.Id">@categoria.Nome</option>
+                            }
+                        </select>
+                    </div>
+                    <input type="hidden" id="categoriaIdHidden" name="categoriaId" value="" />
+                    <button type="submit" class="btn btn-primary ml-2">Filtrar</button>
+                </div>
+            </form>
+        </div>
+        <h3 class="mt-2">@Model.CategoriaAtual</h3>
+        <div class="row row-cols-2 row-cols-md-3 g-4 mt-3">
+            @foreach (var produto in Model.Produtos)
+            {
+                <div class="col">
+                    <partial name="_ProdutoResumo" for="@produto" />
+                </div>
+            }
+
+        </div>
+    }
+</section>
+

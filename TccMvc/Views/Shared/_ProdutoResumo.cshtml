@@ -1,0 +1,71 @@
+﻿<style>
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .card {
+        height: 500px;
+        width: 300px;
+    }
+
+    .card-image {
+        max-height: 300px;
+        width: 300px;
+    }
+
+    .card-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .btn-details {
+        background-color: gray;
+        color: white;
+    }
+</style>
+@if (!Model.IsDisponivel)
+{
+    <div class="col-md-6">
+        <div class="card pb-3" style="background-color: lightgray; opacity-25">
+            <img src="data:image;base64,@Model.ImagemUrl" class="card-image" alt="...">
+            <div class="card-content px-2">
+                <h5 class="card-title text-center mt-2">@Model.Nome</h5>
+                <h5 class="text-center">Produto não disponível</h5>
+                <div>
+                    <div class="d-flex justify-content-between">
+                        <a class="link btn btn-details disabled" asp-controller="Produto" asp-action="Detalhes" asp-route-produtoId="@Model.Id" title="Produto não disponível">Detalhes</a>
+                        <a class="btn btn-primary ml-2 disabled" asp-controller="CarrinhoDeCompras" asp-action="AdicionarItemAoCarrinhoCompra" asp-route-produtoId="@Model.Id" title="Produto não disponível">
+                            <img src="~/Images/carrinho-de-compras-de-design-xadrez.png" style="width:20px; height:20px;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="col-md-6">
+        <div class="card pb-3">
+            <img src="data:image;base64,@Model.ImagemUrl" class="card-image" alt="...">
+            <div class="card-content px-2">
+                <h5 class="card-title text-center mt-2">@Model.Nome</h5>
+                <div>
+                    <p class="card-text">@Model.Descricao</p>
+                    <p>Preço: @Model.Preco.ToString("c")</p>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between">
+                        <a class="link btn btn-details" asp-controller="Produto" asp-action="Detalhes" asp-route-produtoId="@Model.Id">Detalhes</a>
+                        <a class="btn btn-primary ml-2" asp-controller="CarrinhoDeCompras" asp-action="AdicionarItemAoCarrinhoCompra" asp-route-produtoId="@Model.Id">
+                            <img src="~/Images/carrinho-de-compras-de-design-xadrez.png" style="width:20px; height:20px;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

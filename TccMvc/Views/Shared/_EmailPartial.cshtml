@@ -1,0 +1,33 @@
+﻿@model TccMvc.ViewModel.EmailViewModel
+<form method="post" action="@Url.Action("SendEmail", "Email")">
+    <h4 class="mb-4">Deixe sua opinião.</h4>
+    <div class="form-row">
+        <div class="form-group col-sm-4">
+            @*<input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">*@
+            <label asp-for="Name" class="control-label">Name</label>
+            <input asp-for="Name" class="form-control text-white rounded-0 bg-transparent" name="Name" placeholder="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col-sm-4">
+            @*<input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">*@
+            <label asp-for="Email" class="control-label">Email</label>
+            <input asp-for="Email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group col-sm-4">
+            @*<input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Assunto">*@
+            <label asp-for="Subject" class="control-label">Assunto</label>
+            <input asp-for="Subject" class="form-control  text-white rounded-0 bg-transparent" name="subject" placeholder="Assunto" />
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+        <div class="form-group col-12">
+            @*<textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Menssagem"></textarea>*@
+            <label asp-for="Menssage" class="control-label">Mensagem</label>
+            <input asp-for="Menssage" class="form-control  text-white rounded-0 bg-transparent" name="Menssage" placeholder="Menssagem" />
+            <span asp-validation-for="Menssage" class="text-danger"></span>
+        </div>
+        <div class="form-group col-12 mb-0">
+            <button type="submit" class="btn btn-primary rounded w-md mt-3">Send</button>
+        </div>
+    </div>
+</form>
