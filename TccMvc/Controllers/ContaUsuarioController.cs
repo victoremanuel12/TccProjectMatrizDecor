@@ -36,13 +36,13 @@ namespace TccMvc.Controllers
 
                 if (usuarioCadastrado != null)
                 {
-                    TempData["MensagemSucesso"] = "Login efetuado com sucesso!";
+                    TempData["Success"] = "Login efetuado com sucesso!";
                     ClienteInSession.SetClienteInSession(HttpContext, usuarioCadastrado);
                     return RedirectToAction("Index", "Home");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Usuário ou senha inválidos");
+                    TempData["Error"] = "Não foi possivel efetuar o login";
                 }
             }
             return View();
@@ -69,7 +69,7 @@ namespace TccMvc.Controllers
                 await _uow.Commit();
                 Cliente clienteCadastrado = await _uow.ClienteRepository.Get(c => c.Email == cliente.Email);
                 ClienteInSession.SetClienteInSession(HttpContext, clienteCadastrado);
-                TempData["MensagemSucesso"] = "Cadastro efetuado com sucesso.";
+                TempData["Success"] = "Cadastro efetuado com sucesso.";
                 return RedirectToAction("Index", "Home");
             }
             return View(cliente);

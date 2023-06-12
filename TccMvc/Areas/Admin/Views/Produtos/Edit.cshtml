@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="Descricao" class="control-label"></label>
+                            <label asp-for="Descricao" class="control-label">Descricão</label>
                             <input asp-for="Descricao" class="form-control" />
                             <span asp-validation-for="Descricao" class="text-danger"></span>
                         </div>
@@ -32,14 +32,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="Preco" class="control-label"></label>
+                            <label asp-for="Preco" class="control-label">Preço unitário</label>
                             <input asp-for="Preco" class="form-control" />
                             <span asp-validation-for="Preco" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="DescricaoDetalhada" class="control-label"></label>
+                            <label asp-for="DescricaoDetalhada" class="control-label">Descrição detalhada</label>
                             <input asp-for="DescricaoDetalhada" class="form-control" />
                             <span asp-validation-for="DescricaoDetalhada" class="text-danger"></span>
                         </div>
@@ -48,23 +48,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="ImagemUrl" class="control-label"></label>
-                            <input name="imagemFile" type="file" class="form-control" />
-                            <span asp-validation-for="ImagemUrl" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" asp-for="IsDisponivel" /> Está disponível?
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="CategoriaId" class="control-label"></label>
+                            <label asp-for="CategoriaId" class="control-label">Categoria</label>
                             <select asp-for="CategoriaId" class="form-control">
                                 @foreach (var item in @ViewBag.Categorias)
                                 {
@@ -72,6 +56,28 @@
                                 }
                             </select>
                             <span asp-validation-for="CategoriaId" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Quantidade" class="control-label">Quantidade Disponível</label>
+                            <input asp-for="Quantidade" class="form-control" />
+                            <span asp-validation-for="Quantidade" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input name="imagemFile" type="file" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" asp-for="IsDisponivel" /> Está disponivel?
+                            </label>
                         </div>
                     </div>
                 </div>

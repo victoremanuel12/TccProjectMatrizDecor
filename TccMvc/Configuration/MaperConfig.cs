@@ -20,8 +20,8 @@ namespace TccMvc.Configuration
                 .ForMember(dest => dest.CEP, opt => opt.MapFrom(src => src.Cliente.CEP))
                 .ForMember(dest => dest.Bairro, opt => opt.MapFrom(src => src.Cliente.Bairro))
                 .ForMember(dest => dest.Rua, opt => opt.MapFrom(src => src.Cliente.Rua))
-                .ForMember(dest => dest.DataInicial, opt => opt.MapFrom(src => src.DataInicio))
-                .ForMember(dest => dest.DataFinal, opt => opt.MapFrom(src => src.DataFinal))
+                .ForMember(dest => dest.DataInicial, opt => opt.MapFrom(src => src.DataEvento))
+                .ForMember(dest => dest.DataFinal, opt => opt.MapFrom(src => src.DataDevolucao))
                 .ForMember(dest => dest.AluguelId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.AluguelProdutos)
 

@@ -26,14 +26,14 @@
         color: white;
     }
 </style>
-@if (!Model.IsDisponivel)
+@if (!Model.IsDisponivel || Model.Quantidade == 0)
 {
     <div class="col-md-6">
         <div class="card pb-3" style="background-color: lightgray; opacity-25">
             <img src="data:image;base64,@Model.ImagemUrl" class="card-image" alt="...">
             <div class="card-content px-2">
                 <h5 class="card-title text-center mt-2">@Model.Nome</h5>
-                <h5 class="text-center">Produto não disponível</h5>
+                <h5 class="text-center">Produto indisponível</h5>
                 <div>
                     <div class="d-flex justify-content-between">
                         <a class="link btn btn-details disabled" asp-controller="Produto" asp-action="Detalhes" asp-route-produtoId="@Model.Id" title="Produto não disponível">Detalhes</a>
@@ -56,6 +56,7 @@ else
                 <div>
                     <p class="card-text">@Model.Descricao</p>
                     <p>Preço: @Model.Preco.ToString("c")</p>
+                    <p>Quantidade disponível: @Model.Quantidade</p>
                 </div>
                 <div>
                     <div class="d-flex justify-content-between">

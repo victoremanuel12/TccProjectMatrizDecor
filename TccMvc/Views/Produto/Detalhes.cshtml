@@ -9,18 +9,18 @@
         background-color: #EED881;
     }
 </style>
-<section class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh; margin-top:100px; margin-bottom:50px">
+<section class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh; margin-top:15%; margin-bottom:2%">
     <div class="d-flex flex-column justify-content-center align-items-center">
-        <h3>@Model.Produto.Nome</h3>
+        <h3 class="mb-2">@Model.Produto.Nome</h3>
         <img class="img-fluid rounded mb-2" src="data:image;base64,@Model.Produto.ImagemUrl" style="width:400px;height:400px" />
         <p class="fs-4 text mb-2 fw-bolder">@Model.Produto.Descricao</p>
         <p class="fs-5 text mb-2">@Model.Produto.DescricaoDetalhada</p>
-        <p class="fs-5 text mb-2">@Model.Produto.Preco.ToString("c")</p>
+        <p class="fs-5 text mb-3">@Model.Produto.Preco.ToString("c")</p>
 
         <div class="btn-group" role="group">
-            <a class="btn mx-2 btn-primary link" asp-controller="Produto" asp-action="List">Voltar</a>
+            <a class="btn px-3 btn-primary link" asp-controller="Produto" asp-action="List">Voltar</a>
             <a type="button"
-               class="btn color mx-2 link"
+               class="btn color px-4 ml-3 link"
                asp-controller="CarrinhoDeCompras"
                asp-action="AdicionarItemAoCarrinhoCompra"
                asp-route-produtoId="@Model.Produto.Id">

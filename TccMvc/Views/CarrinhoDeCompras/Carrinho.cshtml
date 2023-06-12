@@ -54,7 +54,18 @@
         color: white;
     }
 </style>
-<div class="container d-flex flex-column justify-content-center align-items-center" style=" overflow-y: auto; height:100vh">
+@if (TempData["Error"] != null)
+{
+    <div id="mensagem-sucesso" class="alert alert-danger alert-dismissible fade show position-fixed " role="alert" style="top: 20%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+        <strong class="text-center">@TempData["Error"]</strong>
+    </div>
+    <script>
+        setTimeout(function () {
+            document.getElementById("mensagem-sucesso").style.display = "none";
+        }, 6000);
+    </script>
+}
+<div class="container d-flex flex-column justify-content-center align-items-center" style=" overflow-y: auto; margin-top:10%">
     @if (Model.CarrinhoDeComprasItems.Count() == 0)
     {
         <div class="modal">
@@ -69,7 +80,7 @@
     {
        <hr />
         <div class="d-flex flex-column align-items-center" style="margin-top:50px;">
-            <div class="d-flex flex-wrap justify-content-center align-items-start">
+            <div class="d-flex flex-wrap justify-content-center align-items-start " style="width:70%">
                 @foreach (var produto in Model.CarrinhoDeComprasItems)
                 {
                     <div class="card mb-3" style="width: 600px;">

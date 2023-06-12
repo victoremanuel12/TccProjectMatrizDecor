@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TccMvc.Autorizacao;
+using TccMvc.Utils;
 
 namespace TccMvc.Areas.Admin.Controllers
 {

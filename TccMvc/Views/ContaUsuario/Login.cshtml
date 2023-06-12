@@ -3,16 +3,16 @@
 @{
     ViewData["Title"] = "Login";
 }
-@if (TempData["MensagemSucesso"] != null)
+<div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 120vh">
+@if (TempData["Error"] != null)
 {
-    <div id="mensagem-sucesso" class="alert alert-success text-center mt-3">@TempData["MensagemSucesso"]</div>
+    <div id="mensagem-sucesso" class="alert alert-danger text-center mt-3">@TempData["Error"]</div>
     <script>
         setTimeout(function () {
             document.getElementById("mensagem-sucesso").style.display = "none";
         }, 4000);
     </script>
 }
-<div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 120vh">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto">

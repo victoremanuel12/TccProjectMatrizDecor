@@ -1,13 +1,14 @@
 ﻿@model List<HistoricoAlugueisViewModel>
 
-<section class="container d-flex align-content-center justify-content-center flex-column" style="height:100vh;margin-top:35%">
-    @if (Model != null && Model.Any())
-    {
+@if (Model != null && Model.Any())
+{
+    <section class=" d-flex align-content-center  flex-column" style="height: 100vh; margin-top:20%">
         <h4 class="mb-4 text-center">Histórico de Aluguéis</h4>
-        <div class="card-container">
+        <div class="row">
             @foreach (var historico in Model)
             {
-                <div class="col-md-6 mb-4">
+                decimal total = 0;
+                <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">@historico.Nome</h5>
@@ -18,28 +19,36 @@
                                 <strong>CEP:</strong> @historico.CEP<br />
                                 <strong>Bairro:</strong> @historico.Bairro<br />
                                 <strong>Rua:</strong> @historico.Rua<br />
-                                <strong>Data Inicial:</strong> @historico.DataInicial<br />
-                                <strong>Data Final:</strong> @historico.DataFinal<br />
+                                <strong>Data do evento:</strong> @historico.DataInicial<br />
+                                <strong>Data devolução:</strong> @historico.DataFinal<br />
                                 <strong>ID do Aluguel:</strong> @historico.AluguelId<br />
                             </p>
                             <h6 class="card-subtitle mb-2 text-muted text-center">Produtos Alugados</h6>
-                            <ul class="list-group list-group-flush text-center">
+                            <ul class="list-group  text-center">
                                 @foreach (var produto in historico.Produtos)
                                 {
-                                    <li class="list-group-item btn bg-black text-white">@produto.Nome - @produto.Preco.ToString("c")</li>
+                                    <li class=" mb-1 bg-black text-white font-weight-light">@produto.Nome - @produto.Preco.ToString("c")</li>
+                                    total += produto.Preco;
                                 }
                             </ul>
+                            <span class="text-center ">Quantidade de produtos: @historico.Produtos.Count </span><br>
+                            <span class="text-center ">Valor Total: @total.ToString("c") </span>
                         </div>
                     </div>
                 </div>
             }
         </div>
-    }
-    else
-    {
+    </section>
+}
+else
+{
+
+    <div id="mensagem-sucesso" class="alert alert-success alert-dismissible fade show position-fixed bg-white " role="alert" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
         <h3 class="text-center btn btn-primary font-weight-bold ">Nenhum histórico de aluguel encontrado.</h3>
-    }
-</section>
+    </div>
+   
+
+}
 
 <style>
     .card-container {
@@ -47,12 +56,21 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        max-width: 100%; /* Definindo a largura máxima do container */
-        margin: 0 auto; /* Centralizando o container */
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
     }
 
     .col-md-6 {
-        width: 50%; /* Definindo o tamanho das colunas */
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
     }
 </style>

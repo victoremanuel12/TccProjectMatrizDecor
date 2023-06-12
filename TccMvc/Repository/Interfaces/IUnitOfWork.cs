@@ -1,6 +1,4 @@
-﻿using TccMvc.Models;
-
-namespace TccMvc.Repository.Interfaces
+﻿namespace TccMvc.Repository.Interfaces
 {
     public interface IUnitOfWork
     {

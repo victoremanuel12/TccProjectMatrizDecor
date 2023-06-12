@@ -84,7 +84,7 @@ namespace TccMvc.Areas.Admin.Controllers
             var produto = await _uow.ProdutoRepository.GetById(id);
             if (produto == null)
             {
-                return NotFound();
+                TempData["Error"] = " Produto não encontrado";
             }
             var categorias = await _uow.CategoriaRepository.GetAll();
             var categoriasSelectList = categorias.Select(c => new SelectListItem
@@ -101,43 +101,42 @@ namespace TccMvc.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditPost(Produto produto, IFormFile imagemFile)
         {
-            if (ModelState.IsValid)
+            try
             {
-                try
+                var produtoRetornado = await _uow.ProdutoRepository.GetById(produto.Id);
+                if (produtoRetornado == null)
                 {
-                    var produtoRetornado = await _uow.ProdutoRepository.GetById(produto.Id);
-                    if (produtoRetornado == null)
+                    return NotFound();
+                }
+
+                if (imagemFile != null && imagemFile.Length > 0)
+                {
+                    using (var memoryStream = new MemoryStream())
                     {
-                        return NotFound();
+                        await imagemFile.CopyToAsync(memoryStream);
+                        byte[] imagemBytes = memoryStream.ToArray();
+                        string imagemBase64 = Convert.ToBase64String(imagemBytes);
+                        produtoRetornado.ImagemUrl = imagemBase64;
                     }
 
-                    if (imagemFile != null && imagemFile.Length > 0)
-                    {
-                        using (var memoryStream = new MemoryStream())
-                        {
-                            await imagemFile.CopyToAsync(memoryStream);
-                            byte[] imagemBytes = memoryStream.ToArray();
-                            string imagemBase64 = Convert.ToBase64String(imagemBytes);
-                            produtoRetornado.ImagemUrl = imagemBase64;
-                        }
-
-                    }
-
-                    produtoRetornado.Nome = produto.Nome;
-                    produtoRetornado.Descricao = produto.Descricao;
-                    produtoRetornado.DescricaoDetalhada = produto.DescricaoDetalhada;
-                    produtoRetornado.Preco = produto.Preco;
-                    produtoRetornado.IsDisponivel = produto.IsDisponivel;
-                    produtoRetornado.CategoriaId = produto.CategoriaId;
-
-                    _uow.ProdutoRepository.Update(produtoRetornado);
-                    await _uow.Commit();
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    ModelState.AddModelError("", "Ocorreu um erro ao editar o produto.");
-                }
+
+                produtoRetornado.Nome = produto.Nome;
+                produtoRetornado.Descricao = produto.Descricao;
+                produtoRetornado.DescricaoDetalhada = produto.DescricaoDetalhada;
+                produtoRetornado.Preco = produto.Preco;
+                produtoRetornado.IsDisponivel = produto.IsDisponivel;
+                produtoRetornado.CategoriaId = produto.CategoriaId;
+                produtoRetornado.Quantidade = produtoRetornado.Quantidade += produto.Quantidade;
+
+                _uow.ProdutoRepository.Update(produtoRetornado);
+                await _uow.Commit();
             }
+            catch (DbUpdateConcurrencyException)
+            {
+                ModelState.AddModelError("", "Ocorreu um erro ao editar o produto.");
+            }
+
             return RedirectToAction("Index", "Produtos");
         }
 
@@ -178,7 +177,7 @@ namespace TccMvc.Areas.Admin.Controllers
             {
                 foreach (var item in produtoAlugado.AluguelProdutos)
                 {
-                    if (item.Id == id)
+                    if (item.Produto.Id == id)
                     {
                         TempData["ErrorAoExcluir"] = "Não é possivel executar a exclusão pois o produto ou categoria está vinculado a um aluguel.";
                         return true;

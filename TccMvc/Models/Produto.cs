@@ -12,7 +12,8 @@ namespace TccMvc.Models
         public string ImagemUrl { get; set; }
         public bool IsDisponivel { get; set; }
         public int CategoriaId { get; set; }
+        public int Quantidade { get; set; }
         public virtual Categoria Categoria { get; set; }
-        public virtual List<ImagemProduto> Imagens { get; set; }
+      
     }
 }

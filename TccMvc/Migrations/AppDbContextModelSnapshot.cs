@@ -33,10 +33,10 @@ namespace TccMvc.Migrations
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("DataFinal")
+                    b.Property<DateTime>("DataDevolucao")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DataInicio")
+                    b.Property<DateTime>("DataEvento")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -58,6 +58,9 @@ namespace TccMvc.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("ProdutoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -147,27 +150,6 @@ namespace TccMvc.Migrations
                     b.ToTable("Cliente");
                 });
 
-            modelBuilder.Entity("TccMvc.Models.ImagemProduto", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ImagemUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProdutoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProdutoId");
-
-                    b.ToTable("ImagemProduto");
-                });
-
             modelBuilder.Entity("TccMvc.Models.Produto", b =>
                 {
                     b.Property<int>("Id")
@@ -195,6 +177,9 @@ namespace TccMvc.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Preco")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -230,17 +215,6 @@ namespace TccMvc.Migrations
                     b.Navigation("Produto");
                 });
 
-            modelBuilder.Entity("TccMvc.Models.ImagemProduto", b =>
-                {
-                    b.HasOne("TccMvc.Models.Produto", "Produto")
-                        .WithMany("Imagens")
-                        .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Produto");
-                });
-
             modelBuilder.Entity("TccMvc.Models.Produto", b =>
                 {
                     b.HasOne("TccMvc.Models.Categoria", "Categoria")
@@ -265,11 +239,6 @@ namespace TccMvc.Migrations
             modelBuilder.Entity("TccMvc.Models.Cliente", b =>
                 {
                     b.Navigation("Alugueis");
-                });
-
-            modelBuilder.Entity("TccMvc.Models.Produto", b =>
-                {
-                    b.Navigation("Imagens");
                 });
 #pragma warning restore 612, 618
         }
