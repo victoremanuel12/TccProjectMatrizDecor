@@ -3,18 +3,16 @@
 @{
     ViewData["Title"] = "List";
 }
-<section class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 120vh; margin-top:15%; margin-bottom:10%">
-    @if (Model.Produtos.Count() < 1)
+
+<section class="container d-flex flex-column justify-content-center align-items-center loginbox" style=" margin-top:15%;">
+
+    @if (Model.Produtos.Count() > 0)
     {
-        <h2 class="btn btn-primary">Não existem produtos disponíveis no momento</h2>
-    }
-    else
-    {
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <div class="d-sm-inline-flex">
             <form id="filtroCategoriaForm" asp-controller="Produto" asp-action="List" method="get" class="form-inline ml-2">
                 <div class="d-flex align-items-center">
                     <div class="form-group mb-0">
-                        <span class="mr-2">Filtrar por categoria</span>
+                        <span class="mr-2 text-center">Filtrar por categoria</span>
                         <select class="form-control" id="categoriaSelect" name="categoriaId" data-nome-categoria="@Model.CategoriaAtual">
                             <option></option>
                             <option value="0">Todos</option>
@@ -30,7 +28,7 @@
             </form>
         </div>
         <h3 class="mt-2">@Model.CategoriaAtual</h3>
-        <div class="row row-cols-2 row-cols-md-3 g-4 mt-3">
+        <div class="row row-cols-2 row-cols-md-2 ">
             @foreach (var produto in Model.Produtos)
             {
                 <div class="col">
@@ -39,6 +37,13 @@
             }
 
         </div>
+    }
+    else
+    {
+        <section class=" d-flex flex-column  align-items-center loginbox" style=" height:50vh">
+            <h2 class="btn btn-primary font-weight-bold">Não existem produtos disponíveis no momento</h2>
+        </section>
+
     }
 </section>
 

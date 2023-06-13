@@ -49,8 +49,9 @@ namespace TccMvc.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Produto produto, IFormFile imagemFile)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid )
             {
+                
                 try
                 {
                     if (imagemFile != null && imagemFile.Length > 0)
@@ -63,6 +64,11 @@ namespace TccMvc.Areas.Admin.Controllers
                             string imagemBase64 = Convert.ToBase64String(imagemBytes);
                             produto.ImagemUrl = imagemBase64;
                         }
+                    }
+                    else
+                    {
+                        TempData["Error"] = "Preencha todos os campos";
+                         return RedirectToAction("Create", "Produtos");
                     }
                     _uow.ProdutoRepository.Add(produto);
                     await _uow.Commit();

@@ -65,32 +65,35 @@
         }, 6000);
     </script>
 }
-<div class="container d-flex flex-column justify-content-center align-items-center" style=" overflow-y: auto; margin-top:10%">
+<div class="container d-flex flex-column justify-content-center align-items-center" style=" margin-top:20%; ">
     @if (Model.CarrinhoDeComprasItems.Count() == 0)
     {
-        <div class="modal">
-            <div class="modal-content">
-                <h1>Seu carrinho está vazio</h1>
-                <p>Selecione seus produtos</p>
-                <button><a asp-controller="Produto" asp-action="List" class="link">Produtos</a></button>
+        <div class="container d-flex flex-column justify-content-center align-items-center" style="height:100vh; margin-top:20%; ">
+            <div class="modal">
+                <div class="modal-content">
+                    <h1>Seu carrinho está vazio</h1>
+                    <p>Selecione seus produtos</p>
+                    <button><a asp-controller="Produto" asp-action="List" class="link">Produtos</a></button>
+                </div>
             </div>
         </div>
+
     }
     else
     {
-       <hr />
-        <div class="d-flex flex-column align-items-center" style="margin-top:50px;">
-            <div class="d-flex flex-wrap justify-content-center align-items-start " style="width:70%">
+        <hr />
+        <div class="d-flex flex-column align-items-center w-75">
+            <div class=" container d-flex flex-wrap justify-content-center ">
                 @foreach (var produto in Model.CarrinhoDeComprasItems)
                 {
-                    <div class="card mb-3" style="width: 600px;">
-                        <div class="row g-0">
+                    <div class="card mb-3 " style="width:90%">
+                        <div class="row ">
                             <div class="col-md-4">
                                 <a asp-controller="Produto" asp-action="Detalhes" asp-route-produtoId="@produto.Produto.Id">
-                                    <img src="data:image;base64,@produto.Produto.ImagemUrl" class="rounded float-start" style="max-height:200px; width:150px">
+                                    <img src="data:image;base64,@produto.Produto.ImagemUrl" class="rounded float-start" style="height:250px; width:100%;">
                                 </a>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">@produto.Produto.Nome</h5>
                                     <p class="card-text">@produto.Produto.Descricao</p>
@@ -103,9 +106,9 @@
                     </div>
                 }
             </div>
-            <p class="font-weight-bold btn btn-primary">Valor Total: <b>@Model.ValorTotalCarrinhoCompra.ToString("c")</b></p>
+            <p class="font-weight-bold px-2 py-2 bg-black text-white">Valor Total: <b>@Model.ValorTotalCarrinhoCompra.ToString("c")</b></p>
             <div class="btn-group" role="group">
-                <a class="btn mx-2 btn-details link" asp-controller="Produto" asp-action="List">Continuar Comprando</a>
+                <a class="btn mx-2  btn-primary link" asp-controller="Produto" asp-action="List">Continuar Comprando</a>
                 <a class="btn btn-success link" asp-controller="CarrinhoDeCompras" asp-action="FinalizarCompra">Finalizar Compra</a>
             </div>
         </div>

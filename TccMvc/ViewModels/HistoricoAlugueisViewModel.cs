@@ -15,7 +15,7 @@ namespace TccMvc.ViewModel
         public DateTime DataFinal { get; set; }
         public int AluguelId { get; set; }
         public List<Produto> Produtos { get; set; }
-
+         //public bool Devolvido { get; set; }
         
     }
 }

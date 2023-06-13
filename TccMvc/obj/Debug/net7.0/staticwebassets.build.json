@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TB+xaiNsvJtsslUT0Yh1bviNGlsFTWdhW0sFyQy09wU=",
+  "Hash": "aSUfqkL2bWizCz/q47BiGUJYoNlBBXMtZ9bxSgL0FnE=",
   "Source": "TccMvc",
   "BasePath": "_content/TccMvc",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\AcessoNegado.png",
+      "SourceId": "TccMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\",
+      "BasePath": "_content/TccMvc",
+      "RelativePath": "Images/AcessoNegado.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\AcessoNegado.png"
     },
     {
       "Identity": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\Admin-bro.png",

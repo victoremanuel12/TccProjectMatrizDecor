@@ -32,7 +32,7 @@ namespace TccMvc.ViewModels
         [Required(ErrorMessage = "O campo Data do Evento é obrigatório.")]
         [Display(Name = "Data do Evento")]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        [CustomDate(ErrorMessage = "A data do evento não pode ser a data de hoje.")]
+        [CustomDate(ErrorMessage = "A data do evento não pode ser a data de hoje ou anterior.")]
         public DateTime DataEvento { get; set; }
 
         [Required(ErrorMessage = "O campo Data de Devolução é obrigatório.")]

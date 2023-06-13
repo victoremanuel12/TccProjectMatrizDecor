@@ -1,10 +1,13 @@
 ﻿<br />
-<img src="~/produtos/Admin.jpg" alt="Àrea de Administração" class="marginTop1" />
-<div class="container">
-    <div class="jumbotron">
-        <div>
-            <h2>Acesso Negado!</h2>
+<section class=" d-flex align-content-center  flex-column" style="height: 100vh; margin-top:20%">
+    <div class="container">
+        <div class="jumbotron bg-danger">
+            <div class="d-flex align-items-center just">
+                <img src="~/Images/AcessoNegado.png" alt="Àrea de Administração" class="img-fluid mr-2" style="width:150px; height:150px" />
+                <h2>Acesso Negado!</h2>
+            </div>
         </div>
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-primary bg-danger">Volta a Home Page</a>
     </div>
-    <a asp-area="" asp-controller="Home" asp-action="Index">Volta a Home Page</a>
-</div>
+
+</section>

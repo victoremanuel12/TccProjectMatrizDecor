@@ -28,7 +28,7 @@
 </style>
 @if (!Model.IsDisponivel || Model.Quantidade == 0)
 {
-    <div class="col-md-6">
+    <div class="col-md-6 mb-2">
         <div class="card pb-3" style="background-color: lightgray; opacity-25">
             <img src="data:image;base64,@Model.ImagemUrl" class="card-image" alt="...">
             <div class="card-content px-2">
@@ -48,7 +48,8 @@
 }
 else
 {
-    <div class="col-md-6">
+
+    <div class="col-md-6 mb-2">
         <div class="card pb-3">
             <img src="data:image;base64,@Model.ImagemUrl" class="card-image" alt="...">
             <div class="card-content px-2">

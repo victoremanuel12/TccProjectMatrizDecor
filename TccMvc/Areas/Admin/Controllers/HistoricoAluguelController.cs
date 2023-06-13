@@ -29,6 +29,10 @@ namespace TccMvc.Areas.Admin.Controllers
                 return BadRequest(ex);
             }
         }
+        public ActionResult Details(int PedidoId)
+        {
+            return View();
+        }
 
     }
 }

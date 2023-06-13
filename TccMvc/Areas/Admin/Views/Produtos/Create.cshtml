@@ -6,6 +6,15 @@
 <section style="margin-top:80px">
     <h4>Criar Produto</h4>
     <hr />
+    @if (TempData["Error"] != null)
+{
+    <div id="mensagem-sucesso" class="alert alert-danger text-center mt-3">@TempData["Error"]</div>
+    <script>
+        setTimeout(function () {
+            document.getElementById("mensagem-sucesso").style.display = "none";
+        }, 4000);
+    </script>
+}
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <form asp-action="Create" enctype="multipart/form-data">

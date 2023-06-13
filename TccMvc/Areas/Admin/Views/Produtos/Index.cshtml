@@ -3,17 +3,20 @@
 @{
     ViewData["Title"] = "Index";
 }
-<section class="container d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh">
-    @if (Model.Count() < 1)
-    {
+@if (Model.Count() < 1)
+{
+    <section class="container d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh;">
+
         <h1 class="btn btn-danger"><b>Não existem produtos cadastradas</b></h1>
         <div class="d-flex justify-content-between">
             <a asp-action="Index" asp-controller="Admin" class="btn btn-primary mr-3">Voltar</a>
             <a asp-action="Create" class="btn btn-primary"> Criar novo</a>
         </div>
-    }
-    else
-    {
+    </section>
+}
+else
+{
+    <section class="container d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh; ">
         <h1>Produtos</h1>
         <p>
             <a asp-action="Create" class="btn btn-primary">Novo</a>
@@ -53,9 +56,9 @@
             </table>
         </div>
 
-    }
+    </section>
+}
 
 
-</section>
 
 

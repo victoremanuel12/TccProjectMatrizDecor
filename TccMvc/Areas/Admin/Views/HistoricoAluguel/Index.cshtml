@@ -8,7 +8,7 @@
             @foreach (var historico in Model)
             {
                 decimal total = 0;
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">@historico.Nome</h5>
@@ -24,15 +24,14 @@
                                 <strong>ID do Aluguel:</strong> @historico.AluguelId<br />
                             </p>
                             <h6 class="card-subtitle mb-2 text-muted text-center">Produtos Alugados</h6>
-                            <ul class="list-group  text-center">
+                            <ul class="list-group text-center">
                                 @foreach (var produto in historico.Produtos)
                                 {
-                                    <li class=" mb-1 bg-black text-white font-weight-light">@produto.Nome - @produto.Preco.ToString("c")</li>
-                                    total += produto.Preco;
+                                    <li class="mb-1 bg-black text-white font-weight-light">@produto.Nome - @produto.Preco.ToString("c") - Quant. @produto.Quantidade unid</li>
+                                    total += produto.Preco * produto.Quantidade;
                                 }
                             </ul>
-                            <span class="text-center ">Quantidade de produtos: @historico.Produtos.Count </span><br>
-                            <span class="text-center ">Valor Total: @total.ToString("c") </span>
+                            <span class="font-weight-bold">Valor Total: @total.ToString("c") </span>
                         </div>
                     </div>
                 </div>
@@ -46,7 +45,7 @@ else
     <div id="mensagem-sucesso" class="alert alert-success alert-dismissible fade show position-fixed bg-white " role="alert" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
         <h3 class="text-center btn btn-primary font-weight-bold ">Nenhum histórico de aluguel encontrado.</h3>
     </div>
-   
+
 
 }
 

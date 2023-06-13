@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TccMvc.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\AcessoNegado.png",
+      "PackagePath": "staticwebassets\\Images\\AcessoNegado.png"
+    },
+    {
       "Id": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\wwwroot\\Images\\Admin-bro.png",
       "PackagePath": "staticwebassets\\Images\\Admin-bro.png"
     },
