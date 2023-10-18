@@ -57,7 +57,6 @@ namespace TccMvc.Controllers
             };
 
 
-            //finalizarAluguelViewModel.DataDevolucao = finalizarAluguelViewModel.;
             return View(finalizarAluguelViewModel);
         }
 

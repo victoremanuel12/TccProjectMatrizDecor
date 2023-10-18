@@ -36,7 +36,7 @@ namespace TccMvc.Controllers
 
             return View(produtoViewModel);
         }
-        public IActionResult Detalhes(int produtoId)
+        public async Task<IActionResult> Detalhes(int produtoId)
         {
             var detalhesProdutoViewModel = new DetalhesProdutoViewModel();
             detalhesProdutoViewModel.Produto = _uow.ProdutoRepository.GetById(produtoId).Result;
