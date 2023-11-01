@@ -9,133 +9,133 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TccMvc
 build_property.RootNamespace = TccMvc
-build_property.ProjectDir = C:\Users\victor.silva\Documents\Estudos\TccProject\TccMvc\
+build_property.ProjectDir = C:\Users\victor.silva\Documents\Estudos\projetos\TccProject\TccMvc\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\victor.silva\Documents\Estudos\TccProject\TccMvc
+build_property.MSBuildProjectDirectory = C:\Users\victor.silva\Documents\Estudos\projetos\TccProject\TccMvc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Admin/Index.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Create.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Delete.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Details.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Edit.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Index.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Categorias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/HistoricoAluguel/Index.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/HistoricoAluguel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGlzdG9yaWNvQWx1Z3VlbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Create.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHV0b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Delete.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHV0b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Produtos/DeleteDenied.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Produtos/DeleteDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHV0b3NcRGVsZXRlRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Details.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHV0b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Edit.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHV0b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Index.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Produtos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/CarrinhoDeCompras/Carrinho.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/CarrinhoDeCompras/Carrinho.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9EZUNvbXByYXNcQ2FycmluaG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/CarrinhoDeCompras/FinalizarCompra.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/CarrinhoDeCompras/FinalizarCompra.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9EZUNvbXByYXNcRmluYWxpemFyQ29tcHJhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/ContaUsuario/AccessDenied.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/ContaUsuario/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFVc3VhcmlvXEFjY2Vzc0RlbmllZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/ContaUsuario/Cadastro.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/ContaUsuario/Cadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFVc3VhcmlvXENhZGFzdHJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/ContaUsuario/Login.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/ContaUsuario/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFVc3VhcmlvXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Home/Index.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Produto/Detalhes.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Produto/Detalhes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Produto/List.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Produto/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Shared/_Carousel.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Shared/_Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Shared/_EmailPartial.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Shared/_EmailPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbWFpbFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Shared/_ProdutoResumo.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Shared/_ProdutoResumo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdXRvUmVzdW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/_ViewImports.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/_ViewStart.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victor.silva/Documents/Estudos/TccProject/TccMvc/Views/Shared/_Layout.cshtml]
+[C:/Users/victor.silva/Documents/Estudos/projetos/TccProject/TccMvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wisvryw1ux

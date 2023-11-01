@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\TccMvc.csproj": {}
+    "C:\\Users\\victor.silva\\Documents\\Estudos\\projetos\\TccProject\\TccMvc\\TccMvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\TccMvc.csproj": {
+    "C:\\Users\\victor.silva\\Documents\\Estudos\\projetos\\TccProject\\TccMvc\\TccMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\TccMvc.csproj",
+        "projectUniqueName": "C:\\Users\\victor.silva\\Documents\\Estudos\\projetos\\TccProject\\TccMvc\\TccMvc.csproj",
         "projectName": "TccMvc",
-        "projectPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\TccMvc.csproj",
+        "projectPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\projetos\\TccProject\\TccMvc\\TccMvc.csproj",
         "packagesPath": "C:\\Users\\victor.silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\obj\\",
+        "outputPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\projetos\\TccProject\\TccMvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

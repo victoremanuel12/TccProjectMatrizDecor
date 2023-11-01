@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mAsIw7OpQnn+7gPfLPpy760vA61YOKVX34BwBpmGiC/OugNAJtM4Y2Y4hBPNikQqt0ejVFOmJx2QlC6aVjfDjw==",
+  "dgSpecHash": "KHnve4GGj0FeSOcvduPlrCRxsAmoFVB2PcLry8/pN0IQ7fEHadn48tl5ysVzoJI3xCZPcqK+00digYW3HmbHFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victor.silva\\Documents\\Estudos\\TccProject\\TccMvc\\TccMvc.csproj",
+  "projectFilePath": "C:\\Users\\victor.silva\\Documents\\Estudos\\projetos\\TccProject\\TccMvc\\TccMvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victor.silva\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\victor.silva\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
