@@ -1,6 +1,6 @@
 <!-- Início do README -->
 
-<h1>Projeto de TCC em C# utilizando o Padrão MVC, Repository, e ASP.NET Core</h1>
+<h1>Projeto de TCC em C# utilizando o Padrão MVC, Repository, IUnit Of Work e ASP.NET Core</h1>
 
 <h3>Bem-vindo ao repositório do meu projeto de Trabalho de Conclusão de Curso (TCC), desenvolvido em C# utilizando o padrão de arquitetura MVC (Model-View-Controller) e a implementação do padrão Repository com a utilização da Interface de Unidade de Trabalho (IUnitOfWork). Este projeto também incorpora conhecimentos em HTML, CSS e JavaScript para proporcionar uma experiência de usuário eficiente e agradável.</h3>
 
