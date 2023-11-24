@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using TccMvc.Context;
+﻿using TccMvc.Context;
 using TccMvc.Models;
 using TccMvc.Repository.Interfaces;
 
