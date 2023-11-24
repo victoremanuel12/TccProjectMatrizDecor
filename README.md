@@ -35,6 +35,8 @@
 </ul>
 
 <h4>Banco de Dados</h4>
+![image](https://github.com/victoremanuel12/TccProjectMatrizDecor/assets/93943734/98fdc562-d12f-45c1-bed2-2d3b43b9569a)
+
 <p>O projeto utiliza o banco de dados SQL Server para armazenar e recuperar dados. O relacionamento entre as tabelas é crucial para a integridade dos dados. A seguir, uma breve descrição das tabelas e seus relacionamentos:</p>
 
 <ol>
